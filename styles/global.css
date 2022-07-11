@@ -4,10 +4,21 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  height: 100%;
 }
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  font-size: 30px;
+}
+
+#__next {
+  height: 100%;
 }
 
 main {
@@ -40,6 +51,7 @@ footer a {
 
 a {
   color: inherit;
+  font-size: 23px;
   text-decoration: none;
 }
 
@@ -50,4 +62,9 @@ code {
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.title-not-found {
+  color: darkgray;
+  text-align: center;
 }
