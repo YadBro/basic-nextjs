@@ -1,18 +1,12 @@
-import { render, screen } from '@testing-library/react'
-import Home from '@/pages/index'
+import { render, screen } from '@testing-library/react';
+import Home from '@/pages/index';
 
 describe('Home', () => {
-  it('renders a heading', () => {
-    const pokeom= [{
-      name: 'pokemon 1',
-      url : 'tes.com'
-    }]
-    render(<Home pokemons={pokeom}/>)
+  it('renders a image', () => {
+    render(<Home/>)
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    })
+    const Image = screen.getByTestId('ptkimg');
 
-    expect(heading).toBeInTheDocument()
+    expect(Image).toHaveProperty('alt', 'Patrik');
   })
 })
